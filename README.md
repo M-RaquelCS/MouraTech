@@ -6,42 +6,13 @@
   <img src="https://img.shields.io/github/stars/M-RaquelCS/MouraTech?color=%23835afd" alt='stars'/>
 </p>
 
-# HTML5CCS3
-## Sobre o desafio 🤷
+# Moura Tech
+É uma iniciativa da [Moura](https://www.moura.com.br) em uma parceria com o [IFPE - Campus Belo Jardim](https://www.ifpe.edu.br/campus/belo-jardim), onde pretende-se formar jovens que cursam Engenharia de Software em desenvolvedores web e mobile.
+
+## 🖥️ Projetos
+
+### HTML5CCS3
 One Page Site, também conhecido como uma página com um layout de rolagem longa. É um site onde você pode incluir todas as informações essenciais do seu negócio com criatividade em um único espaço.
-
-## 🖥️ Tecnologias
-Este projeto foi desenvolvido com as seguintes tecnologias:
-* HTML5
-* CSS3
-
-## 🎨 Requisitos de Qualidade
-
-### SEO:
-* Utilização correta da semântica do HTML5
-* Validar arquivos HTML e CSS no validator W3C
-
-### Experiência do usuário (UX):
-* Mobile First
-* Responsividade
-* Usabilidade
-
-## 🥸 Detalhes do Projeto
-
-### Gestão do Projeto
-* Planejamento do conteúdo
-* Kanban
-* Versionamento Git/GitHub
-
-### Modelagem
-* Wireframes (Figma)
-  * protótipo de baixa fidalidade
-  * protótipo de alta fidalidade
-
-### Codificação
-* Visual Studio Code
-  * HTML5
-  * SASS -> CSS
 
 ---
 # 👩🏼‍💻 Author
