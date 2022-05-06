@@ -2,9 +2,11 @@
   --background: #f2f3f5;
 
   --red: #e44d26;
-  --red-light: #fcd6cc;
+  --red-light: #FFE3E3;
   --blue: #264DE4;
+  --blue-light: #D0EBFF;
   --yellow: #E4A126;
+  --yellow-light: #FFF4E6;
 
   --gray-headline: #061800;
   --paragraph: #15181a;
@@ -25,7 +27,7 @@ body {
   font: 400 1rem 'Roboto', sans-serif;
   text-align: center;
 
-  /*overflow: overlay;*/
+  overflow: overlay;
 }
 
 .wrapper {
@@ -46,7 +48,7 @@ header h1 {
   margin-bottom: 2.4rem;
 }
 
-header h3, .container-html h3 {
+header h3, .text-container h3 {
   font-size: 1.8rem;
   color: var(--gray-headline);
   margin-bottom: 2.4rem;
@@ -113,7 +115,7 @@ nav div.wrapper button {
 .container-html::before {
   content: "";
   width: 100vw;
-  height: 66rem;
+  height: 68rem;
 
   background-color: var(--red-light);
 
@@ -147,15 +149,77 @@ nav div.wrapper button {
 
 .text-container a {
   text-decoration: none;
+  margin-bottom: 1rem;
 
-  font-size: 1.5rem;
+  font-size: 1.6rem;
+  font-weight: 700;
 
   display: flex;
   justify-content: end;
 
   color: var(--gray-headline);
 
-  /*padding: 0.8rem 2rem;
-  border-radius: 1.5rem;*/
-  /*background-color: var(--red);*/
+  position: relative;
+
+  cursor: pointer;
 }
+
+.container-html .text-container a::after {
+  content: "";
+  background-color: var(--red);
+  width: 80px;
+  height: 1px;
+  position: absolute;
+  bottom: 0;
+}
+
+/**---------**/
+
+.container-css::before {
+  content: "";
+  width: 100vw;
+  height: 59rem;
+
+  background-color: var(--blue-light);
+
+  display: block;
+  position: absolute;
+  left: 0;
+
+  z-index: -1;
+}
+
+.container-css .text-container a::after {
+  content: "";
+  background-color: var(--blue);
+  width: 80px;
+  height: 1px;
+  position: absolute;
+  bottom: 0;
+}
+
+/**---------**/
+.container-javascript::before {
+  content: "";
+  width: 100vw;
+  height: 62rem;
+
+  background-color: var(--yellow-light);
+
+  display: block;
+  position: absolute;
+  left: 0;
+
+  z-index: -1;
+}
+
+.container-javascript .text-container a::after {
+  content: "";
+  background-color: var(--yellow);
+  width: 80px;
+  height: 1px;
+  position: absolute;
+  bottom: 0;
+}
+
+/**---------**/
