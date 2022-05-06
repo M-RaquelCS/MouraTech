@@ -1,11 +1,13 @@
 :root{
   --background: #f2f3f5;
 
-  --red: #E44D26;
+  --red: #e44d26;
+  --red-light: #fcd6cc;
   --blue: #264DE4;
   --yellow: #E4A126;
 
   --gray-headline: #061800;
+  --paragraph: #15181a;
 
   font-size: 62.5%; /* 1rem = 10px */
 
@@ -23,17 +25,17 @@ body {
   font: 400 1rem 'Roboto', sans-serif;
   text-align: center;
 
-  overflow: overlay;
+  /*overflow: overlay;*/
 }
 
 .wrapper {
-  width: 37.5rem;
+  width: 37rem;
   margin-inline: auto;
   padding-inline: 2.4rem;
 }
 
 header{
-  margin-top: calc(4.1rem + var(--nav-height));
+  margin-top: 4.1rem;
 }
 
 header h1 {
@@ -44,7 +46,7 @@ header h1 {
   margin-bottom: 2.4rem;
 }
 
-header h3 {
+header h3, .container-html h3 {
   font-size: 1.8rem;
   color: var(--gray-headline);
   margin-bottom: 2.4rem;
@@ -69,16 +71,28 @@ header image {
   object-position: 0 2rem;
 }
 
+/*header::after {
+  content: '';
+  width: 100%;
+
+  border: 1px solid var(--red);
+
+  display: block;
+
+  position: absolute;
+  left: 0;
+}*/
+
 /**------------**/
 nav {
   display: flex;
 
   height: var(--nav-height);
 
-  position: fixed;
+  /*position: fixed;
   top: 0;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-50%);*/
   
 }
 
@@ -90,4 +104,58 @@ nav div.wrapper {
 
 nav div.wrapper button {
   border: none;
+  background: none;
+  cursor: pointer;
+}
+
+/**--------------**/
+
+.container-html::before {
+  content: "";
+  width: 100vw;
+  height: 66rem;
+
+  background-color: var(--red-light);
+
+  display: block;
+  position: absolute;
+  left: 0;
+
+  z-index: -1;
+}
+
+.text-container{
+  padding: 2rem 0 0;
+}
+
+.text-container h1 {
+  font-size: 2.4rem;
+  line-height: 130%;
+  letter-spacing: 0.15rem;
+  
+  color: var(--gray-headline);
+
+}
+
+.text-container p {
+  font-size: 1.6rem;
+  line-height: 150%;
+  color: var(--paragraph);
+
+  margin-bottom: 3.2rem;
+}
+
+.text-container a {
+  text-decoration: none;
+
+  font-size: 1.5rem;
+
+  display: flex;
+  justify-content: end;
+
+  color: var(--gray-headline);
+
+  /*padding: 0.8rem 2rem;
+  border-radius: 1.5rem;*/
+  /*background-color: var(--red);*/
 }
