@@ -37,7 +37,7 @@ body {
 }
 
 header{
-  margin-top: 4.1rem;
+  margin-top: calc(4.1rem + var(--nav-height));
 }
 
 header h1 {
@@ -91,11 +91,17 @@ nav {
 
   height: var(--nav-height);
 
-  /*position: fixed;
+  position: fixed;
   top: 0;
   left: 50%;
-  transform: translateX(-50%);*/
+  transform: translateX(-50%);
   
+}
+
+nav.scroll {
+  background-color: white;
+  width: 100vw;
+  z-index: 1;
 }
 
 nav div.wrapper {
