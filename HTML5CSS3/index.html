@@ -21,50 +21,45 @@
 
   <link rel="shortcut icon" href="./assets/logo.svg" type="image/x-svg">
 
-  <link rel="stylesheet" href="./styles/global.css">
+  <link rel="stylesheet" href="styles/global.css">
 
   <title>MouraTech</title>
 </head>
 <body >
 
-  <nav id="navigation">
-
-    <div class="wrapper">
-
-      <a href="#">
-        <img src="./assets/logo.svg" alt="logo constituído pelos três símbolos do HTML, CSS e JavaScript" />
-      </a>
-
-      <button>
-        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M8.33334 35.4167C8.33334 36.5673 9.26608 37.5 10.4167 37.5H41.6667C42.8173 37.5 43.75 36.5673 43.75 35.4167V35.4167C43.75 34.2661 42.8173 33.3333 41.6667 33.3333H10.4167C9.26608 33.3333 8.33334 34.2661 8.33334 35.4167V35.4167ZM18.4896 25C18.4896 26.1506 19.4223 27.0833 20.5729 27.0833H41.6667C42.8173 27.0833 43.75 26.1506 43.75 25V25C43.75 23.8494 42.8173 22.9167 41.6667 22.9167H20.5729C19.4223 22.9167 18.4896 23.8494 18.4896 25V25ZM10.4167 12.5C9.26608 12.5 8.33334 13.4327 8.33334 14.5833V14.5833C8.33334 15.7339 9.26608 16.6667 10.4167 16.6667H41.6667C42.8173 16.6667 43.75 15.7339 43.75 14.5833V14.5833C43.75 13.4327 42.8173 12.5 41.6667 12.5H10.4167Z" fill="black"/>
-        </svg>            
-      </button>
-
-    </div>
-  </nav>
-
-  <header class="wrapper">
-
-    <h1>
-      Entenda o mundo Web com <strong class="html">HTML5</strong>, 
-      <strong class="css">CSS3</strong> e 
-      <strong class="javascript">JavaScript</strong>
-    </h1>
-
-    <h3>
-      Aprendendo a escrever com <strong class="html">semântica</strong>,
-      aplicar <strong class="css">estilos</strong> modernos e
-      obter uma melhor <strong class="javascript">interação</strong>.
-    </h3>
-
-    <img src="./assets/Computer.svg" alt="imagem de uma tela de computador com alguns livros de lado e uma janela com barras coloridas simulando um código em html, css e javascript">
-
+  <header id="navigation" class="menu wrapper">
+    <img id='logo' src="/assets/logo.svg" alt="logo constituído pelos três símbolos do HTML, CSS e JavaScript">
+    <ul>
+      <li><a href="#">HTML</a></li>
+      <li><a href="#">CSS</a></li>
+      <li><a href="#">JavaScript</a></li>
+      <li><a href="#">Links Úteis</a></li>
+    </ul>
   </header>
-  
-  <div class="container-html wrapper">
+
+  <section id='container-initial' class=" wrapper flex-direction">
     
-    <div class="text-container">
+    <div class="text-initial">
+      <h1>
+        Entenda o mundo Web com <strong class="html">HTML5</strong>, 
+        <strong class="css">CSS3</strong> e 
+        <strong class="javascript">JavaScript</strong>
+      </h1>
+      
+      <h3>
+        Aprendendo a escrever com <strong class="html">semântica</strong>,
+        aplicar <strong class="css">estilos</strong> modernos e
+        <br>obter uma melhor <strong class="javascript">interação</strong>.
+      </h3>
+    </div>
+    
+    <img src="./assets/Computer.svg" alt="imagem de uma tela de computador com alguns livros de lado e uma janela com barras coloridas simulando um código em html, css e javascript">
+  
+  </section>
+
+  <section id='container-html' class="wrapper flex-direction">
+    
+    <div class="text-initial">
       <h1>HTML</h1>
       <h3>A HTML é a linguagem principal da web</h3>
       <p>
@@ -72,44 +67,14 @@
         Seria mais semântica com menos código. Seria mais interatividade sem a necessidade de instalação de plugins e perda de performance. 
         É a criação de código interoperável, pronto para futuros dispositivos e que facilita a reutilização da informação de diversas formas.
       </p>
-
+  
       <a href="#">Saiba mais</a>
-
+  
     </div>
-
+  
     <img src="./assets/image-html.svg" alt="imagem da logo do HTML5" />
-  </div>
-
-  <div class="container-css wrapper">
-    <div class="text-container">
-      <h1>CSS3</h1>
-      <h3>O CSS complementa o HTML</h3>
-      <p>
-        CSS é uma linguagem de estilo, também conhecida como folhas de estilo em cascata. 
-        É usada para personalização visual de um site. 
-        Ou seja, elas servem para otimizar o conteúdo das páginas e permitir uma apresentação mais amigável para o usuário.
-      </p>
-      <a href="#">Saiba mais</a>
-    </div>
-
-    <img src="./assets/image-css.svg" alt="imagem da logo do CSS3" />
-
-  </div>
-
-  <div class="container-javascript wrapper">
-    <div class="text-container">
-      <h1>JavaScript</h1>
-      <h3>Como a HTML e o CSS, o JavaScript é uma das três principais tecnologias da web</h3>
-      <p>
-        O JavaScript é uma linguagem baseada em protótipos, multi-paradigma e dinâmica, 
-        suportando estilos de orientação a objetos, imperativos e declarativos (como por exemplo a programação funcional).
-      </p>
-      <a href="#">Saiba mais</a>
-    </div>
-
-    <img src="./assets/image-javascript.svg" alt="imagem da logo do javascript" />
-
-  </div>
+    
+  </section>
   
 </body>
 </html>

@@ -1,0 +1,186 @@
+$background: #f2f3f5;
+$red: #e44d26;
+$red-light: #FFE3E3;
+$blue: #264DE4;
+$blue-light: #D0EBFF;
+$yellow: #E4A126;
+$yellow-light: #FFF4E6;
+
+$gray-headline: #061800;
+$paragraph: #15181a;
+
+$breakpoints: (
+  xs: 0,        //Smartphones em modo retrato
+  sm: 576px,    //Smartphones em modo paisagem ou Tablets em modo retrato
+  md: 800px,    //Tablets em modo paisagem
+  lg: 1024px,    //Desktops
+  xl: 1200px,   //Desktops com alta definição HD e FHD
+  xxl: 2000px   //Desktops com ultra alta definição QHD e UHD
+);
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font: 400 1rem 'Roboto', sans-serif;
+  flex-wrap: wrap;
+  img {
+    image-rendering: pixelated;
+  }
+}
+
+main, section {
+  height: 75vh;
+  text-align: center;
+  /*overflow: hidden;*/
+  border: 1px solid black;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-inline: auto;
+  padding-inline: 2rem;
+
+}
+
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem;
+
+  ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    
+    a{
+      color: $gray-headline;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    li{
+      font-size: 1.1rem;
+      & + li{
+        margin-left: 1rem;
+      }
+    }
+  }
+}
+
+.text-initial{
+  
+  h1 {
+    font-size: 2.1rem;
+    color: $gray-headline;
+    line-height: 130%;
+    
+    margin-bottom: 2.4rem;
+  }
+  h3{
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: $gray-headline;
+    margin-bottom: 2.4rem;
+    line-height: 150%;
+  }
+  p{
+    font-size: 1.2rem;
+    line-height: 150%;
+    color: $paragraph;
+    word-break: keep-all ;
+
+    margin-bottom: 3.2rem;
+  }
+  
+}
+
+#container-initial {
+  .text-initial{
+    .html{
+      color: $red;
+    }
+    .css {
+      color: $blue;
+    }
+    .javascript {
+      color: $yellow;
+    }
+  }
+  img {
+    margin-left: 0.5rem;
+  }
+}
+
+#container-html {
+  h1 {
+  letter-spacing: 0.3rem;
+
+  }
+  img {
+    margin-left: 2rem;
+  }
+}
+
+//Smartphones em modo retrato
+@media (min-width: map-get($breakpoints, xs)) { 
+  .wrapper {
+    width: 50rem;
+  }
+  .flex-direction{
+    flex-direction: column;
+
+  }  
+}
+
+@media (min-width: map-get($breakpoints, sm)) and (orientation: portrait) {
+  #logo {
+      width: 80px;
+      height: 80px;
+  }
+  .wrapper {
+    width: 50rem;
+  }
+  .flex-direction{
+    flex-direction: column;
+    
+  }
+}
+
+//Tablets em modo paisagem
+@media (min-width: map-get($breakpoints, md)) {
+  #logo {
+      width: 90px;
+      height: 90px;
+  }
+  .wrapper {
+    width: 70rem;
+  }
+  .flex-direction{
+    flex-direction: row;
+
+  }
+}
+
+//Desktops
+@media (min-width: map-get($breakpoints, lg)) {
+  #logo {
+      width: 100px;
+      height: 100px;
+  }
+  .wrapper {
+    width: 90rem;
+  }
+  .flex-direction{
+    flex-direction: row;
+  }
+}
