@@ -78,6 +78,10 @@ main, section {
 }
 
 /*----------------------------------------------------------------*/
+.text-initial {
+  /* https://www.visualdicas.com.br/programacao/css/27-como-alinhar-listas-html-utilizando-flexbox */
+}
+
 .text-initial h1 {
   color: #061800;
   line-height: 130%;
