@@ -21,7 +21,6 @@ body img {
 main, section {
   height: 75vh;
   text-align: center;
-  overflow: hidden;
   border: 1px solid black;
 }
 
@@ -132,7 +131,31 @@ main, section {
 }
 
 .text-initial .list-text-initial ul h3 {
+  /*font-size: 1.45rem;*/
   margin-bottom: 1rem;
+}
+
+.text-initial .list-text-initial ul a {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /*font-size: 1rem;*/
+  -webkit-transition: -webkit-filter 0.2s;
+  transition: -webkit-filter 0.2s;
+  transition: filter 0.2s;
+  transition: filter 0.2s, -webkit-filter 0.2s;
+}
+
+.text-initial .list-text-initial ul a img {
+  margin-right: 0.4rem;
+}
+
+.text-initial .list-text-initial ul a:hover {
+  -webkit-filter: brightness(0.7);
+          filter: brightness(0.7);
 }
 
 /*----------------------------------------------------------------*/
@@ -250,9 +273,15 @@ main, section {
     width: 63px;
   }
   .text-initial .list-text-initial {
-    -ms-grid-rows: (1fr)[3];
-        grid-template-rows: repeat(3, 1fr);
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
+  }
+  .text-initial .list-text-initial h3 {
+    font-size: 1rem;
+  }
+  .text-initial .list-text-initial a {
+    font-size: .8rem;
   }
   #container-initial img, #container-html img, #container-css img, #container-javascript img {
     width: 80%;
@@ -294,7 +323,7 @@ main, section {
   }
   .text-initial h1 {
     font-size: 1.2rem;
-    margin-bottom: 2.4rem;
+    margin-bottom: 2.2rem;
   }
   .text-initial h3 {
     font-size: 1rem;
@@ -305,8 +334,8 @@ main, section {
     margin-bottom: 3.2rem;
   }
   .text-initial .list-text-initial {
-    -ms-grid-rows: (1fr)[3];
-        grid-template-rows: repeat(3, 1fr);
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
   }
   #container-initial img, #container-html img, #container-css img, #container-javascript img {
@@ -362,11 +391,15 @@ main, section {
     margin-bottom: 3.2rem;
   }
   .text-initial .list-text-initial {
-    -ms-grid-rows: none;
-        grid-template-rows: none;
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
+  }
+  .text-initial .list-text-initial h3 {
+    font-size: 1.2rem;
+  }
+  .text-initial .list-text-initial a {
+    font-size: .9rem;
   }
   #container-initial img, #container-html img, #container-css img, #container-javascript img {
     width: 45%;
@@ -399,13 +432,6 @@ main, section {
   }
   .text-initial a::after {
     width: 85px;
-  }
-  .text-initial .list-text-initial {
-    -ms-grid-rows: none;
-        grid-template-rows: none;
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
   }
 }
 
@@ -453,11 +479,15 @@ main, section {
     width: 85px;
   }
   .text-initial .list-text-initial {
-    -ms-grid-rows: none;
-        grid-template-rows: none;
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+    gap: 3rem;
+  }
+  .text-initial .list-text-initial h3 {
+    font-size: 1.5rem;
+  }
+  .text-initial .list-text-initial a {
+    font-size: 1rem;
   }
   #container-initial img, #container-html img, #container-css img, #container-javascript img {
     width: 70%;
@@ -503,11 +533,15 @@ main, section {
     width: 95px;
   }
   .text-initial .list-text-initial {
-    -ms-grid-rows: none;
-        grid-template-rows: none;
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+    gap: 3rem;
+  }
+  .text-initial .list-text-initial h3 {
+    font-size: 1.8rem;
+  }
+  .text-initial .list-text-initial a {
+    font-size: 1.2rem;
   }
   #container-initial img, #container-html img, #container-css img, #container-javascript img {
     width: 75%;
@@ -518,6 +552,12 @@ main, section {
 @media (min-width: 1400px) {
   .wrapper {
     width: 85rem;
+  }
+  .list-text-initial h3 {
+    font-size: 2rem;
+  }
+  .list-text-initial a {
+    font-size: 1.4rem;
   }
 }
 /*# sourceMappingURL=global.css.map */
