@@ -98,4 +98,4 @@ function repetir(a, b){
   }
 }
 
-repetir("oi",4)
+console.log(repetir("oi",4))
